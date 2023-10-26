@@ -1,0 +1,151 @@
+<html>
+<script>
+function fun()
+{
+document.getElementById("x").innerHTML =Math.ceil(Math.random()*10);
+}
+</script>
+
+<body>
+Random number :<p id=x></p>
+<button onclick="fun()">Click me</button>
+<body>
+</html>
+
+ 
+<html>
+<script>
+function fun1()
+{
+document.getElementById("x").innerHTML =Math.ceil(Math.random()*10);
+}
+function fun2()
+{
+document.getElementById("x").innerHTML =Math.min(22,11,2,3,66);
+}
+function fun3()
+{
+document.getElementById("x").innerHTML =Math.max(22,11,2,3,66);
+}
+function fun4()
+{
+document.getElementById("x").innerHTML =Math.round(4.5);
+}
+
+</script>
+
+<body>
+Result is :<p id=x></p>
+<button onclick="fun1()">Random</button>
+<button onclick="fun2()">Min</button>
+<button onclick="fun3()">Max</button>
+<button onclick="fun4()">Round</button>
+
+<body>
+</html>
+
+ 
+<html>
+<body>
+Add:<span id="add1"></span>
+sub:<span id="sub1"></span>
+mul:<span id="mul1"></span>
+div:<span id="div1"></span>
+</body>
+
+<script>
+document.getElementById("add1").innerHTML = add(5,6);
+document.getElementById("sub1").innerHTML = sub(15,6);
+document.getElementById("mul1").innerHTML = mul(5,6);
+document.getElementById("div1").innerHTML = div(18,6);
+
+function add(a,b)
+{ return a+b;}
+function sub(a,b)
+{ return a-b;}
+function mul(a,b)
+{ return a*b;}
+function div(a,b)
+{ return a/b;}
+
+</script>
+</html>
+
+
+
+
+</html>
+<body>
+Faculty Details :-<p id=x></p>
+Student Details :-<p id=y></p>
+</body>
+
+<script>
+var student =
+{
+name:"Priya",
+address:"Bangalore",
+age :22,
+email:"priya@gmail.com"
+};
+
+var faculty =
+{
+name:"sandip",
+address:"Bangalore",
+age :42,
+email:"sandip@gmail.com"
+};
+
+
+
+document.getElementById("x").innerHTML =" My name is "+student.name +" my address is "+student.address+"  my age is "+student.age+" my email is: "+student.email;
+
+document.getElementById("y").innerHTML =" My name is "+faculty.name +" my address is "+faculty.address+"  my age is "+faculty.age+" my email is: "+faculty.email;
+
+</script>
+</html>
+
+
+
+ 
+
+<html>
+The sum of 2 nos are :<p id=x></p>
+The sub of 2 nos are :<p id=y></p>
+The mul of 2 nos are :<p id=z></p>
+The div of 2 nos are :<p id=v></p>
+
+<script>
+const sum=(a,b) => a+b;
+document.getElementById("x").innerHTML = sum(13,12);
+
+const sub=(a,b) => a-b;
+document.getElementById("y").innerHTML = sub(13,12);
+
+const mul=(a,b) => a*b;
+document.getElementById("z").innerHTML = mul(13,12);
+
+const div=(a,b) => a/b;
+document.getElementById("v").innerHTML = div(12,4);
+</script>
+</html>
+
+
+
+ 
+<html>
+<body>
+Your Details :-<p id=x></p>
+<script>
+var student =
+{
+name:"sandip",
+address:"Bangalore",
+age :22,
+email:"sandip@gmail.com"
+};
+document.getElementById("x").innerHTML =" My name is "+student.name +" my address is "+student.address+"  my age is "+student.age+" my email is: "+student.email;
+</script>
+</body>
+<html>
